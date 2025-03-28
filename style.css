@@ -1,0 +1,40 @@
+.holder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item:nth-child(1) {
+    grid-column: span 2;
+    background-color: #E74C3C;
+}
+
+.item:nth-child(2) {
+    background-color: #5D89BA;
+}
+
+.item:nth-child(3) {
+    background-color: #6D3596;
+}
+
+.item:nth-child(4) {
+    background-color: #2D8437;
+}
+
+.item:nth-child(5) {
+    grid-column: span 2;
+    background-color: #F39C12;
+}
