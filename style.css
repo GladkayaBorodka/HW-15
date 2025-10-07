@@ -1,63 +1,58 @@
+/* Загальні стилі для контейнера */
+.holder {
+    display: flex; 
+    flex-wrap: wrap; 
+    width: 800px; 
+    height: 500px; 
+    border-radius: 25px; 
+    border: 5px solid black;
+    overflow: hidden; 
+    font-family: Arial, sans-serif; 
+}
 
-        body {
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: sans-serif;
-        }
+/* Загальні стилі для всіх блоків */
+.item {
+    height: 50%; /* Кожен блок займає 50% висоти контейнера */
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 6rem; 
+    font-weight: bold; 
+}
 
-        .holder {
-            display: flex;    
-            flex-wrap: wrap;  
-            width: 800px;
-            border: 4px solid black;
-            border-radius: 25px;
-            padding: 10px;
-            background-color: white;
-        }
+/* Блок 1 */
+.item:nth-child(1) {
+    background-color: #e76e55;
+    flex-basis: 40%; /* Ширина 40% */
+    order: 1; 
+}
 
-        .item {
-            color: black;
-            font-size: 2.5em;
-            font-weight: bold;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            box-sizing: border-box;
-            min-height: 100px;
-            flex-basis: 40%;
-        }
+/* Блок 2 */
+.item:nth-child(2) {
+    background-color: #5995d4;
+    flex-basis: 40%;
+    order: 4; 
+}
 
-    
-        .item:nth-child(1) {
-            background-color: #E8705A;
-            order: 1; 
-            flex-grow: 1;
-        }
-        
-        .item:nth-child(2) {
-            background-color: #6388B4;
-            order: 4; 
-            flex-grow: 2;
-        }
-        
-        .item:nth-child(3) {
-            background-color: #6A4494;
-            order: 3; 
-            flex-grow: 1;
-        }
+/* Блок 3 */
+.item:nth-child(3) {
+    background-color: #6b3f8d;
+    flex-basis: 30%; /* Ширина 30% */
+    order: 3;
+}
 
-        .item:nth-child(4) {
-            background-color: #38761D;
-            order: 5; 
-            flex-grow: 1.5;
-        }
-        
-        .item:nth-child(5) {
-            background-color: #F3A622;
-            order: 2; 
-            flex-grow: 1.5;
-        }
+/* Блок 4 */
+.item:nth-child(4) {
+    background-color: #2f7e2f;
+    flex-basis: 30%; /* Ширина 30% */
+    order: 5;
+}
+
+/* Блок 5 */
+.item:nth-child(5) {
+    background-color: #f0a72b;
+    flex-basis: 60%; /* Ширина 60% */
+    order: 2; 
+}
