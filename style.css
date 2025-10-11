@@ -4,7 +4,7 @@
     flex-wrap: wrap; 
     width: 800px; 
     height: 500px; 
-    border-radius: 25px; 
+    border-radius: 25px 25px 0 0; 
     border: 5px solid black;
     overflow: hidden; 
     font-family: Arial, sans-serif; 
@@ -12,7 +12,7 @@
 
 /* Загальні стилі для всіх блоків */
 .item {
-    height: 50%; /* Кожен блок займає 50% висоти контейнера */
+    height: 50%; 
     box-sizing: border-box; 
     display: flex;
     justify-content: center;
@@ -25,34 +25,34 @@
 /* Блок 1 */
 .item:nth-child(1) {
     background-color: #e76e55;
-    flex-basis: 40%; /* Ширина 40% */
+    flex-basis: 50%; 
     order: 1; 
 }
 
 /* Блок 2 */
 .item:nth-child(2) {
     background-color: #5995d4;
-    flex-basis: 40%;
+    flex-grow: 4; 
     order: 4; 
 }
 
 /* Блок 3 */
 .item:nth-child(3) {
     background-color: #6b3f8d;
-    flex-basis: 30%; /* Ширина 30% */
+    flex-grow: 3;
     order: 3;
 }
 
 /* Блок 4 */
 .item:nth-child(4) {
     background-color: #2f7e2f;
-    flex-basis: 30%; /* Ширина 30% */
+    flex-grow: 3;
     order: 5;
 }
 
 /* Блок 5 */
 .item:nth-child(5) {
     background-color: #f0a72b;
-    flex-basis: 60%; /* Ширина 60% */
+    flex-basis: 50%;
     order: 2; 
 }
